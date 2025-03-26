@@ -1,0 +1,65 @@
+<project>
+    <property name="src" location="./src/"/>
+    <property name="build" location="build"/>
+    <property name="library" location="lib"/>
+    <property name="doc" location="doc"/>
+    <property name="dest" location="dest"/>
+    <property name="jar" value="ija-app.jar"/>
+    <path id="class.path">
+        <fileset dir="${library}">
+            <include name="**/*.jar"/>
+        </fileset>
+    </path>
+
+
+    <target name="clean">
+        <delete dir="${build}"/>
+        <delete dir="${dest}"/>
+    </target>
+
+    <target name="compile" depends="clean">
+        <mkdir dir="${build}"/>
+        <javac srcdir="${src}"  destdir="${build}" includeantruntime="false">
+            <modulepath path="${library}"/>
+            <compilerarg line="--add-modules=javafx.controls,javafx.fxml"/>
+            <classpath refid="class.path"/>
+        </javac>
+    </target>
+
+
+    <target name="jar" depends="compile">
+        <mkdir dir="${dest}"/>
+        <jar destfile="${dest}/${jar}" basedir="${build}">
+            <manifest>
+                <attribute name="Main-Class" value="ija21.Main"/>
+                <attribute name="Class-Path" value="${library}/json-simple-1.1.jar"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="run" depends="jar">
+        <java jar="${dest}/${jar}" fork="true">
+            <modulepath path="${library}"/>
+            <jvmarg line="--add-modules=javafx.controls,javafx.fxml"/>
+        </java>
+    </target>
+
+
+    <target name="doc" depends="clean">
+        <mkdir dir="${doc}"/>
+        <javadoc locale="cs_CZ"
+                 sourcepath="${src}"
+                 excludepackagenames=""
+                 destdir="${doc}"
+                 author="true"
+                 version="true"
+                 use="true"
+                 windowtitle="IJA PROJEKT"
+                 charset="UTF-8">
+            <classpath refid="class.path"/>
+            <doctitle><![CDATA[<h1>IJA PROJEKT</h1>]]></doctitle>
+            <bottom><![CDATA[<i>Autor: Dokoupil Ladislav, Bobola Adrián</i>]]></bottom>
+        </javadoc>
+    </target>
+
+</project>

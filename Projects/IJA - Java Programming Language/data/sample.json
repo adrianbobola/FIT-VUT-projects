@@ -1,0 +1,1550 @@
+{
+  "name": "pobocka-brno",
+  "maxX": 36,
+  "maxY": 24,
+  "trolley": [
+    {
+      "id": 0,
+      "x": 0,
+      "y": 22
+    },
+    {
+      "id": 1,
+      "x": 5,
+      "y": 22
+    },
+    {
+      "id": 2,
+      "x": 10,
+      "y": 22
+    },
+    {
+      "id": 3,
+      "x": 15,
+      "y": 22
+    },
+    {
+      "id": 4,
+      "x": 25,
+      "y": 22
+    }
+  ],
+  "content": [
+    {
+      "x": 2,
+      "y": 1,
+      "name": "triko",
+      "amount": 74
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "name": "boty",
+      "amount": 68
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "name": "plavky",
+      "amount": 76
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "name": "kalhotky",
+      "amount": 82
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "name": "podprsenka",
+      "amount": 89
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "name": "top",
+      "amount": 61
+    },
+    {
+      "x": 2,
+      "y": 10
+    },
+    {
+      "x": 2,
+      "y": 11,
+      "name": "body",
+      "amount": 86
+    },
+    {
+      "x": 2,
+      "y": 12,
+      "name": "tilko",
+      "amount": 79
+    },
+    {
+      "x": 2,
+      "y": 13,
+      "name": "kosilka",
+      "amount": 95
+    },
+    {
+      "x": 2,
+      "y": 14,
+      "name": "puncochy",
+      "amount": 61
+    },
+    {
+      "x": 2,
+      "y": 15,
+      "name": "ponozky",
+      "amount": 72
+    },
+    {
+      "x": 2,
+      "y": 16,
+      "name": "overal",
+      "amount": 59
+    },
+    {
+      "x": 2,
+      "y": 17,
+      "name": "saty",
+      "amount": 97
+    },
+    {
+      "x": 2,
+      "y": 18,
+      "name": "sukne",
+      "amount": 83
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "name": "tunika",
+      "amount": 73
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "name": "kalhoty",
+      "amount": 61
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "name": "dziny",
+      "amount": 99
+    },
+    {
+      "x": 3,
+      "y": 4
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "name": "sortky",
+      "amount": 99
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "name": "kostym",
+      "amount": 58
+    },
+    {
+      "x": 3,
+      "y": 10,
+      "name": "sako",
+      "amount": 81
+    },
+    {
+      "x": 3,
+      "y": 11,
+      "name": "bunda",
+      "amount": 76
+    },
+    {
+      "x": 3,
+      "y": 12,
+      "name": "kabat",
+      "amount": 76
+    },
+    {
+      "x": 3,
+      "y": 13,
+      "name": "kozich",
+      "amount": 62
+    },
+    {
+      "x": 3,
+      "y": 14,
+      "name": "bluzka",
+      "amount": 62
+    },
+    {
+      "x": 3,
+      "y": 15,
+      "name": "halenka",
+      "amount": 64
+    },
+    {
+      "x": 3,
+      "y": 16,
+      "name": "svetr",
+      "amount": 93
+    },
+    {
+      "x": 3,
+      "y": 17,
+      "name": "rolak",
+      "amount": 61
+    },
+    {
+      "x": 3,
+      "y": 18,
+      "name": "pulovr",
+      "amount": 66
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "name": "mikina",
+      "amount": 85
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "name": "vesta",
+      "amount": 51
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "name": "zastera",
+      "amount": 57
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "name": "satek",
+      "amount": 75
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "name": "klobouk",
+      "amount": 68
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "name": "cepec",
+      "amount": 87
+    },
+    {
+      "x": 6,
+      "y": 10,
+      "name": "pyzamo",
+      "amount": 98
+    },
+    {
+      "x": 6,
+      "y": 11,
+      "name": "saly",
+      "amount": 58
+    },
+    {
+      "x": 6,
+      "y": 12,
+      "name": "nocni kosile",
+      "amount": 58
+    },
+    {
+      "x": 6,
+      "y": 13,
+      "name": "boxerky",
+      "amount": 59
+    },
+    {
+      "x": 6,
+      "y": 14,
+      "name": "kosile",
+      "amount": 75
+    },
+    {
+      "x": 6,
+      "y": 15,
+      "name": "spodky",
+      "amount": 74
+    },
+    {
+      "x": 6,
+      "y": 16,
+      "name": "camara",
+      "amount": 100
+    },
+    {
+      "x": 6,
+      "y": 17,
+      "name": "monterky",
+      "amount": 88
+    },
+    {
+      "x": 6,
+      "y": 18,
+      "name": "slipy",
+      "amount": 84
+    },
+    {
+      "x": 7,
+      "y": 1
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "name": "trenyrky",
+      "amount": 74
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "name": "trenkoslipy",
+      "amount": 88
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "name": "ponozky",
+      "amount": 72
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "name": "podkolenky",
+      "amount": 60
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "name": "plavky",
+      "amount": 55
+    },
+    {
+      "x": 7,
+      "y": 10,
+      "name": "svetr",
+      "amount": 80
+    },
+    {
+      "x": 7,
+      "y": 11,
+      "name": "zaket",
+      "amount": 56
+    },
+    {
+      "x": 7,
+      "y": 12
+    },
+    {
+      "x": 7,
+      "y": 13
+    },
+    {
+      "x": 7,
+      "y": 14,
+      "name": "rolak",
+      "amount": 72
+    },
+    {
+      "x": 7,
+      "y": 15,
+      "name": "teplaky",
+      "amount": 67
+    },
+    {
+      "x": 7,
+      "y": 16,
+      "name": "oblek",
+      "amount": 100
+    },
+    {
+      "x": 7,
+      "y": 17,
+      "name": "bluza",
+      "amount": 83
+    },
+    {
+      "x": 7,
+      "y": 18,
+      "name": "plast",
+      "amount": 77
+    },
+    {
+      "x": 10,
+      "y": 1,
+      "name": "cepice",
+      "amount": 69
+    },
+    {
+      "x": 10,
+      "y": 2,
+      "name": "kravata",
+      "amount": 96
+    },
+    {
+      "x": 10,
+      "y": 3,
+      "name": "motylek",
+      "amount": 52
+    },
+    {
+      "x": 10,
+      "y": 4,
+      "name": "hulka",
+      "amount": 60
+    },
+    {
+      "x": 10,
+      "y": 5,
+      "name": "destnik",
+      "amount": 77
+    },
+    {
+      "x": 10,
+      "y": 6,
+      "name": "boty",
+      "amount": 68
+    },
+    {
+      "x": 10,
+      "y": 10,
+      "name": "pyzamo",
+      "amount": 78
+    },
+    {
+      "x": 10,
+      "y": 11,
+      "name": "skafandr",
+      "amount": 53
+    },
+    {
+      "x": 10,
+      "y": 12,
+      "name": "triko",
+      "amount": 98
+    },
+    {
+      "x": 10,
+      "y": 13,
+      "name": "boty",
+      "amount": 64
+    },
+    {
+      "x": 10,
+      "y": 14,
+      "name": "plavky",
+      "amount": 50
+    },
+    {
+      "x": 10,
+      "y": 15,
+      "name": "kalhotky",
+      "amount": 63
+    },
+    {
+      "x": 10,
+      "y": 16,
+      "name": "podprsenka",
+      "amount": 62
+    },
+    {
+      "x": 10,
+      "y": 17,
+      "name": "top",
+      "amount": 96
+    },
+    {
+      "x": 10,
+      "y": 18
+    },
+    {
+      "x": 11,
+      "y": 1,
+      "name": "body",
+      "amount": 83
+    },
+    {
+      "x": 11,
+      "y": 2,
+      "name": "tilko",
+      "amount": 89
+    },
+    {
+      "x": 11,
+      "y": 3,
+      "name": "kosilka",
+      "amount": 60
+    },
+    {
+      "x": 11,
+      "y": 4,
+      "name": "puncochy",
+      "amount": 65
+    },
+    {
+      "x": 11,
+      "y": 5,
+      "name": "ponozky",
+      "amount": 91
+    },
+    {
+      "x": 11,
+      "y": 6,
+      "name": "overal",
+      "amount": 54
+    },
+    {
+      "x": 11,
+      "y": 10,
+      "name": "saty",
+      "amount": 51
+    },
+    {
+      "x": 11,
+      "y": 11,
+      "name": "sukne",
+      "amount": 59
+    },
+    {
+      "x": 11,
+      "y": 12,
+      "name": "tunika",
+      "amount": 64
+    },
+    {
+      "x": 11,
+      "y": 13,
+      "name": "kalhoty",
+      "amount": 67
+    },
+    {
+      "x": 11,
+      "y": 14,
+      "name": "dziny",
+      "amount": 79
+    },
+    {
+      "x": 11,
+      "y": 15
+    },
+    {
+      "x": 11,
+      "y": 16,
+      "name": "sortky",
+      "amount": 72
+    },
+    {
+      "x": 11,
+      "y": 17,
+      "name": "kostym",
+      "amount": 69
+    },
+    {
+      "x": 11,
+      "y": 18,
+      "name": "sako",
+      "amount": 76
+    },
+    {
+      "x": 14,
+      "y": 1,
+      "name": "bunda",
+      "amount": 84
+    },
+    {
+      "x": 14,
+      "y": 2,
+      "name": "kabat",
+      "amount": 71
+    },
+    {
+      "x": 14,
+      "y": 3,
+      "name": "kozich",
+      "amount": 57
+    },
+    {
+      "x": 14,
+      "y": 4,
+      "name": "bluzka",
+      "amount": 53
+    },
+    {
+      "x": 14,
+      "y": 5,
+      "name": "halenka",
+      "amount": 51
+    },
+    {
+      "x": 14,
+      "y": 6,
+      "name": "svetr",
+      "amount": 67
+    },
+    {
+      "x": 14,
+      "y": 10,
+      "name": "rolak",
+      "amount": 62
+    },
+    {
+      "x": 14,
+      "y": 11,
+      "name": "pulovr",
+      "amount": 94
+    },
+    {
+      "x": 14,
+      "y": 12,
+      "name": "mikina",
+      "amount": 59
+    },
+    {
+      "x": 14,
+      "y": 13,
+      "name": "vesta",
+      "amount": 82
+    },
+    {
+      "x": 14,
+      "y": 14,
+      "name": "zastera",
+      "amount": 80
+    },
+    {
+      "x": 14,
+      "y": 15,
+      "name": "satek",
+      "amount": 88
+    },
+    {
+      "x": 14,
+      "y": 16,
+      "name": "klobouk",
+      "amount": 67
+    },
+    {
+      "x": 14,
+      "y": 17,
+      "name": "cepec",
+      "amount": 87
+    },
+    {
+      "x": 14,
+      "y": 18,
+      "name": "pyzamo",
+      "amount": 63
+    },
+    {
+      "x": 15,
+      "y": 1,
+      "name": "saly",
+      "amount": 95
+    },
+    {
+      "x": 15,
+      "y": 2,
+      "name": "nocni kosile",
+      "amount": 56
+    },
+    {
+      "x": 15,
+      "y": 3,
+      "name": "boxerky",
+      "amount": 79
+    },
+    {
+      "x": 15,
+      "y": 4,
+      "name": "kosile",
+      "amount": 89
+    },
+    {
+      "x": 15,
+      "y": 5,
+      "name": "spodky",
+      "amount": 97
+    },
+    {
+      "x": 15,
+      "y": 6,
+      "name": "camara",
+      "amount": 51
+    },
+    {
+      "x": 15,
+      "y": 10,
+      "name": "monterky",
+      "amount": 57
+    },
+    {
+      "x": 15,
+      "y": 11,
+      "name": "slipy",
+      "amount": 83
+    },
+    {
+      "x": 15,
+      "y": 12
+    },
+    {
+      "x": 15,
+      "y": 13,
+      "name": "trenyrky",
+      "amount": 81
+    },
+    {
+      "x": 15,
+      "y": 14,
+      "name": "trenkoslipy",
+      "amount": 95
+    },
+    {
+      "x": 15,
+      "y": 15,
+      "name": "ponozky",
+      "amount": 71
+    },
+    {
+      "x": 15,
+      "y": 16,
+      "name": "podkolenky",
+      "amount": 74
+    },
+    {
+      "x": 15,
+      "y": 17,
+      "name": "plavky",
+      "amount": 70
+    },
+    {
+      "x": 15,
+      "y": 18,
+      "name": "svetr",
+      "amount": 60
+    },
+    {
+      "x": 18,
+      "y": 1,
+      "name": "zaket",
+      "amount": 77
+    },
+    {
+      "x": 18,
+      "y": 2
+    },
+    {
+      "x": 18,
+      "y": 3
+    },
+    {
+      "x": 18,
+      "y": 4,
+      "name": "rolak",
+      "amount": 85
+    },
+    {
+      "x": 18,
+      "y": 5,
+      "name": "teplaky",
+      "amount": 68
+    },
+    {
+      "x": 18,
+      "y": 6,
+      "name": "oblek",
+      "amount": 98
+    },
+    {
+      "x": 18,
+      "y": 10,
+      "name": "bluza",
+      "amount": 51
+    },
+    {
+      "x": 18,
+      "y": 11,
+      "name": "plast",
+      "amount": 56
+    },
+    {
+      "x": 18,
+      "y": 12,
+      "name": "cepice",
+      "amount": 94
+    },
+    {
+      "x": 18,
+      "y": 13,
+      "name": "kravata",
+      "amount": 94
+    },
+    {
+      "x": 18,
+      "y": 14,
+      "name": "motylek",
+      "amount": 92
+    },
+    {
+      "x": 18,
+      "y": 15,
+      "name": "hulka",
+      "amount": 66
+    },
+    {
+      "x": 18,
+      "y": 16,
+      "name": "destnik",
+      "amount": 88
+    },
+    {
+      "x": 18,
+      "y": 17,
+      "name": "boty",
+      "amount": 78
+    },
+    {
+      "x": 18,
+      "y": 18,
+      "name": "pyzamo",
+      "amount": 53
+    },
+    {
+      "x": 19,
+      "y": 1,
+      "name": "skafandr",
+      "amount": 67
+    },
+    {
+      "x": 19,
+      "y": 2,
+      "name": "triko",
+      "amount": 86
+    },
+    {
+      "x": 19,
+      "y": 3,
+      "name": "boty",
+      "amount": 80
+    },
+    {
+      "x": 19,
+      "y": 4,
+      "name": "plavky",
+      "amount": 61
+    },
+    {
+      "x": 19,
+      "y": 5,
+      "name": "kalhotky",
+      "amount": 56
+    },
+    {
+      "x": 19,
+      "y": 6,
+      "name": "podprsenka",
+      "amount": 62
+    },
+    {
+      "x": 19,
+      "y": 10,
+      "name": "top",
+      "amount": 96
+    },
+    {
+      "x": 19,
+      "y": 11
+    },
+    {
+      "x": 19,
+      "y": 12,
+      "name": "body",
+      "amount": 79
+    },
+    {
+      "x": 19,
+      "y": 13,
+      "name": "tilko",
+      "amount": 61
+    },
+    {
+      "x": 19,
+      "y": 14,
+      "name": "kosilka",
+      "amount": 96
+    },
+    {
+      "x": 19,
+      "y": 15,
+      "name": "puncochy",
+      "amount": 79
+    },
+    {
+      "x": 19,
+      "y": 16,
+      "name": "ponozky",
+      "amount": 59
+    },
+    {
+      "x": 19,
+      "y": 17,
+      "name": "overal",
+      "amount": 57
+    },
+    {
+      "x": 19,
+      "y": 18,
+      "name": "saty",
+      "amount": 93
+    },
+    {
+      "x": 22,
+      "y": 1,
+      "name": "sukne",
+      "amount": 68
+    },
+    {
+      "x": 22,
+      "y": 2,
+      "name": "tunika",
+      "amount": 65
+    },
+    {
+      "x": 22,
+      "y": 3,
+      "name": "kalhoty",
+      "amount": 61
+    },
+    {
+      "x": 22,
+      "y": 4,
+      "name": "dziny",
+      "amount": 100
+    },
+    {
+      "x": 22,
+      "y": 5
+    },
+    {
+      "x": 22,
+      "y": 6,
+      "name": "sortky",
+      "amount": 57
+    },
+    {
+      "x": 22,
+      "y": 10,
+      "name": "kostym",
+      "amount": 77
+    },
+    {
+      "x": 22,
+      "y": 11,
+      "name": "sako",
+      "amount": 73
+    },
+    {
+      "x": 22,
+      "y": 12,
+      "name": "bunda",
+      "amount": 75
+    },
+    {
+      "x": 22,
+      "y": 13,
+      "name": "kabat",
+      "amount": 84
+    },
+    {
+      "x": 22,
+      "y": 14,
+      "name": "kozich",
+      "amount": 74
+    },
+    {
+      "x": 22,
+      "y": 15,
+      "name": "bluzka",
+      "amount": 55
+    },
+    {
+      "x": 22,
+      "y": 16,
+      "name": "halenka",
+      "amount": 78
+    },
+    {
+      "x": 22,
+      "y": 17,
+      "name": "svetr",
+      "amount": 88
+    },
+    {
+      "x": 22,
+      "y": 18,
+      "name": "rolak",
+      "amount": 99
+    },
+    {
+      "x": 23,
+      "y": 1,
+      "name": "pulovr",
+      "amount": 56
+    },
+    {
+      "x": 23,
+      "y": 2,
+      "name": "mikina",
+      "amount": 97
+    },
+    {
+      "x": 23,
+      "y": 3,
+      "name": "vesta",
+      "amount": 59
+    },
+    {
+      "x": 23,
+      "y": 4,
+      "name": "zastera",
+      "amount": 94
+    },
+    {
+      "x": 23,
+      "y": 5,
+      "name": "satek",
+      "amount": 59
+    },
+    {
+      "x": 23,
+      "y": 6,
+      "name": "klobouk",
+      "amount": 97
+    },
+    {
+      "x": 23,
+      "y": 10,
+      "name": "cepec",
+      "amount": 60
+    },
+    {
+      "x": 23,
+      "y": 11,
+      "name": "pyzamo",
+      "amount": 76
+    },
+    {
+      "x": 23,
+      "y": 12,
+      "name": "saly",
+      "amount": 92
+    },
+    {
+      "x": 23,
+      "y": 13,
+      "name": "nocni kosile",
+      "amount": 90
+    },
+    {
+      "x": 23,
+      "y": 14,
+      "name": "boxerky",
+      "amount": 94
+    },
+    {
+      "x": 23,
+      "y": 15,
+      "name": "kosile",
+      "amount": 72
+    },
+    {
+      "x": 23,
+      "y": 16,
+      "name": "spodky",
+      "amount": 50
+    },
+    {
+      "x": 23,
+      "y": 17,
+      "name": "camara",
+      "amount": 51
+    },
+    {
+      "x": 23,
+      "y": 18,
+      "name": "monterky",
+      "amount": 97
+    },
+    {
+      "x": 26,
+      "y": 1,
+      "name": "slipy",
+      "amount": 62
+    },
+    {
+      "x": 26,
+      "y": 2
+    },
+    {
+      "x": 26,
+      "y": 3,
+      "name": "trenyrky",
+      "amount": 55
+    },
+    {
+      "x": 26,
+      "y": 4,
+      "name": "trenkoslipy",
+      "amount": 99
+    },
+    {
+      "x": 26,
+      "y": 5,
+      "name": "ponozky",
+      "amount": 98
+    },
+    {
+      "x": 26,
+      "y": 6,
+      "name": "podkolenky",
+      "amount": 53
+    },
+    {
+      "x": 26,
+      "y": 10,
+      "name": "plavky",
+      "amount": 99
+    },
+    {
+      "x": 26,
+      "y": 11,
+      "name": "svetr",
+      "amount": 69
+    },
+    {
+      "x": 26,
+      "y": 12,
+      "name": "zaket",
+      "amount": 84
+    },
+    {
+      "x": 26,
+      "y": 13
+    },
+    {
+      "x": 26,
+      "y": 14
+    },
+    {
+      "x": 26,
+      "y": 15,
+      "name": "rolak",
+      "amount": 55
+    },
+    {
+      "x": 26,
+      "y": 16,
+      "name": "teplaky",
+      "amount": 95
+    },
+    {
+      "x": 26,
+      "y": 17,
+      "name": "oblek",
+      "amount": 70
+    },
+    {
+      "x": 26,
+      "y": 18,
+      "name": "bluza",
+      "amount": 91
+    },
+    {
+      "x": 27,
+      "y": 1,
+      "name": "plast",
+      "amount": 83
+    },
+    {
+      "x": 27,
+      "y": 2,
+      "name": "cepice",
+      "amount": 73
+    },
+    {
+      "x": 27,
+      "y": 3,
+      "name": "kravata",
+      "amount": 72
+    },
+    {
+      "x": 27,
+      "y": 4,
+      "name": "motylek",
+      "amount": 99
+    },
+    {
+      "x": 27,
+      "y": 5,
+      "name": "hulka",
+      "amount": 74
+    },
+    {
+      "x": 27,
+      "y": 6,
+      "name": "destnik",
+      "amount": 79
+    },
+    {
+      "x": 27,
+      "y": 10,
+      "name": "boty",
+      "amount": 96
+    },
+    {
+      "x": 27,
+      "y": 11,
+      "name": "pyzamo",
+      "amount": 92
+    },
+    {
+      "x": 27,
+      "y": 12,
+      "name": "skafandr",
+      "amount": 92
+    },
+    {
+      "x": 27,
+      "y": 13,
+      "name": "triko",
+      "amount": 80
+    },
+    {
+      "x": 27,
+      "y": 14,
+      "name": "boty",
+      "amount": 77
+    },
+    {
+      "x": 27,
+      "y": 15,
+      "name": "plavky",
+      "amount": 54
+    },
+    {
+      "x": 27,
+      "y": 16,
+      "name": "kalhotky",
+      "amount": 98
+    },
+    {
+      "x": 27,
+      "y": 17,
+      "name": "podprsenka",
+      "amount": 94
+    },
+    {
+      "x": 27,
+      "y": 18,
+      "name": "top",
+      "amount": 58
+    },
+    {
+      "x": 30,
+      "y": 1
+    },
+    {
+      "x": 30,
+      "y": 2,
+      "name": "body",
+      "amount": 90
+    },
+    {
+      "x": 30,
+      "y": 3,
+      "name": "tilko",
+      "amount": 54
+    },
+    {
+      "x": 30,
+      "y": 4,
+      "name": "kosilka",
+      "amount": 58
+    },
+    {
+      "x": 30,
+      "y": 5,
+      "name": "puncochy",
+      "amount": 94
+    },
+    {
+      "x": 30,
+      "y": 6,
+      "name": "ponozky",
+      "amount": 60
+    },
+    {
+      "x": 30,
+      "y": 10,
+      "name": "overal",
+      "amount": 61
+    },
+    {
+      "x": 30,
+      "y": 11,
+      "name": "saty",
+      "amount": 76
+    },
+    {
+      "x": 30,
+      "y": 12,
+      "name": "sukne",
+      "amount": 63
+    },
+    {
+      "x": 30,
+      "y": 13,
+      "name": "tunika",
+      "amount": 91
+    },
+    {
+      "x": 30,
+      "y": 14,
+      "name": "kalhoty",
+      "amount": 89
+    },
+    {
+      "x": 30,
+      "y": 15,
+      "name": "dziny",
+      "amount": 86
+    },
+    {
+      "x": 30,
+      "y": 16
+    },
+    {
+      "x": 30,
+      "y": 17,
+      "name": "sortky",
+      "amount": 86
+    },
+    {
+      "x": 30,
+      "y": 18,
+      "name": "kostym",
+      "amount": 97
+    },
+    {
+      "x": 31,
+      "y": 1,
+      "name": "sako",
+      "amount": 50
+    },
+    {
+      "x": 31,
+      "y": 2,
+      "name": "bunda",
+      "amount": 71
+    },
+    {
+      "x": 31,
+      "y": 3,
+      "name": "kabat",
+      "amount": 51
+    },
+    {
+      "x": 31,
+      "y": 4,
+      "name": "kozich",
+      "amount": 75
+    },
+    {
+      "x": 31,
+      "y": 5,
+      "name": "bluzka",
+      "amount": 94
+    },
+    {
+      "x": 31,
+      "y": 6,
+      "name": "halenka",
+      "amount": 93
+    },
+    {
+      "x": 31,
+      "y": 10,
+      "name": "svetr",
+      "amount": 58
+    },
+    {
+      "x": 31,
+      "y": 11,
+      "name": "rolak",
+      "amount": 92
+    },
+    {
+      "x": 31,
+      "y": 12,
+      "name": "pulovr",
+      "amount": 85
+    },
+    {
+      "x": 31,
+      "y": 13,
+      "name": "mikina",
+      "amount": 75
+    },
+    {
+      "x": 31,
+      "y": 14,
+      "name": "vesta",
+      "amount": 70
+    },
+    {
+      "x": 31,
+      "y": 15,
+      "name": "zastera",
+      "amount": 87
+    },
+    {
+      "x": 31,
+      "y": 16,
+      "name": "satek",
+      "amount": 80
+    },
+    {
+      "x": 31,
+      "y": 17,
+      "name": "klobouk",
+      "amount": 54
+    },
+    {
+      "x": 31,
+      "y": 18,
+      "name": "cepec",
+      "amount": 70
+    }
+  ],
+  "staging": [
+    {"x": 0,
+      "y": 22
+    },
+    {"x": 1,
+      "y": 22
+    },
+    {"x": 2,
+      "y": 22
+    },
+    {"x": 3,
+      "y": 22
+    },
+    {"x": 4,
+      "y": 22
+    },
+    {"x": 5,
+      "y": 22
+    },
+    {"x": 6,
+      "y": 22
+    },
+    {"x": 7,
+      "y": 22
+    },
+    {"x": 8,
+      "y": 22
+    },
+    {"x": 9,
+      "y": 22
+    },
+    {"x": 10,
+      "y": 22
+    },
+    {"x": 11,
+      "y": 22
+    },
+    {"x": 12,
+      "y": 22
+    },
+    {"x": 13,
+      "y": 22
+    },
+    {"x": 14,
+      "y": 22
+    },
+    {"x": 15,
+      "y": 22
+    },
+    {"x": 16,
+      "y": 22
+    },
+    {"x": 17,
+      "y": 22
+    },
+    {"x": 18,
+      "y": 22
+    },
+    {"x": 19,
+      "y": 22
+    },
+    {"x": 20,
+      "y": 22
+    },
+    {"x": 21,
+      "y": 22
+    },
+    {"x": 22,
+      "y": 22
+    },
+    {"x": 23,
+      "y": 22
+    },
+    {"x": 24,
+      "y": 22
+    },
+    {"x": 25,
+      "y": 22
+    },
+    {"x": 26,
+      "y": 22
+    },
+    {"x": 27,
+      "y": 22
+    },
+    {"x": 28,
+      "y": 22
+    },
+    {"x": 29,
+      "y": 22
+    },
+    {"x": 30,
+      "y": 22
+    },
+    {"x": 31,
+      "y": 22
+    },
+    {"x": 32,
+      "y": 22
+    },
+    {"x": 33,
+      "y": 22
+    },
+    {"x": 34,
+      "y": 22
+    },
+    {"x": 35,
+      "y": 22
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+164 [8656] INFO perfrun.launcher <> - Launcher main begin
+178 [8656] INFO perfrun.launcher <> - MessageCatalogInit finished
+178 [8656] INFO perfrun.launcher <> - Launcher instance created
+179 [8656] INFO perfrun.launcher <> - argc = 7; cmdline = C:\Program Files (x86)\Intel\oneAPI\advisor\2021.3.0\bin64\advixe-runss.exe --ui-output-format xml --ui-output-fd 3428 --option-file C:\Users\xbobol00\Downloads\ITU-Lab-Starter\WPFWeather.App\My Advisor Results - WPFWeather.App\e000\hs000\config\runss.options 
+225 [8656] INFO perfrun.launcher <> - New signal handler callback was added
+303 [8656] INFO perfrun.launcher <> - create msngr2::ICliToolContext
+304 [8656] INFO perfrun.launcher <> - create file finder object
+305 [8656] INFO perfrun.launcher <> - create a result directory: pattern = C:\Users\xbobol00\Downloads\ITU-Lab-Starter\WPFWeather.App\My Advisor Results - WPFWeather.App\e000\hs000 pid = 4294967295
+318 [8656] INFO perfrun.launcher <> - create data directory = C:\Users\xbobol00\Downloads\ITU-Lab-Starter\WPFWeather.App\My Advisor Results - WPFWeather.App\e000\hs000\data.0
+319 [8656] INFO perfrun.launcher <> - Creating the master collection flag
+329 [8656] INFO perfrun.launcher <> - Done creating the master collection flag
+329 [11224] INFO perfrun.launcher <> - plugin [remoteplug] was disabled because it doesn't support the given collection type.
+331 [11224] INFO perfrun.sdk <> - Allocating TMU :C:\Users\xbobol00\Downloads\ITU-Lab-Starter\WPFWeather.App\My Advisor Results - WPFWeather.App\e000\hs000\data.0\systemcollector-9768-PCN204-02.fit.vutbr.cz.sc
+331 [11224] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+338 [11224] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+338 [11224] INFO perfrun.launcher <> - plugin [gpu] was disabled because it doesn't support the given collection type.
+338 [11224] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+338 [11224] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+338 [11224] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+338 [11224] INFO perfrun.mrte <> - system-wide mode is 0
+339 [11224] INFO perfrun.mrte <> - Getting  mrte profiling environment ...
+430 [11224] INFO perfrun.mrte <> - INTEL_MRTE_DATA_DIR=C:\Users\xbobol00\Downloads\ITU-Lab-Starter\WPFWeather.App\My Advisor Results - WPFWeather.App\e000\hs000\data.0
+430 [11224] INFO perfrun.mrte <> - INTEL_MRTE_HOST_NAME=PCN204-02.fit.vutbr.cz
+430 [11224] INFO perfrun.mrte <> - JAVA_TOOL_OPTIONS=-agentlib:advixe_tpssmrte_javaprof_1.0
+430 [11224] INFO perfrun.mrte <> - COR_ENABLE_PROFILING=1
+430 [11224] INFO perfrun.mrte <> - COR_PROFILER={10337B79-F6CD-4df9-8D18-26A67272096B}
+430 [11224] INFO perfrun.mrte <> - COMPLUS_ProfAPI_ProfilerCompatibilitySetting=EnableV2Profiler
+430 [11224] INFO perfrun.mrte <> - CORECLR_ENABLE_PROFILING=1
+430 [11224] INFO perfrun.mrte <> - CORECLR_PROFILER={10337B79-F6CD-4df9-8D18-26A67272096B}
+430 [11224] INFO perfrun.mrte <> - CORECLR_PROFILER_PATH=C:\Program Files (x86)\Intel\oneAPI\advisor\2021.3.0\bin64/advixe_tpssmrte_clrprof_1.0.dll
+430 [11224] INFO perfrun.mrte <> - INTEL_MRTE_PROFILER_MODE=mixed
+430 [11224] INFO perfrun.mrte <> - Data directory: C:\Users\xbobol00\Downloads\ITU-Lab-Starter\WPFWeather.App\My Advisor Results - WPFWeather.App\e000\hs000\data.0
+430 [11224] INFO perfrun.mrte <> - Mrte plugin is initialized
+430 [11224] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+430 [11224] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+430 [11224] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+430 [11224] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+431 [11224] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+431 [11224] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+431 [11224] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+431 [11224] INFO perfrun.tpss <> - initialize tpss controller
+431 [11224] INFO perfrun.tpss <> - configure collection mode: value = cpu:stack
+432 [11224] INFO perfrun.tpss <> - default obj-size-min=1024
+432 [11224] INFO perfrun.tpss <> - default hash-table-size=0
+432 [11224] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+432 [11224] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+432 [11224] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+432 [11224] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+432 [11224] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+432 [11224] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+433 [11224] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+433 [11224] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+433 [11224] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+433 [8656] INFO perfrun.launcher <> - set environment variable: PATH = C:\Program Files (x86)\Intel\oneAPI\advisor\2021.3.0\bin32\runtime;C:\Program Files (x86)\Intel\oneAPI\advisor\2021.3.0\bin64\runtime;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\libnvvp;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2020.1.2\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\HDF_Group\HDF5\1.10.5\bin\;C:\Users\xbobol00\AppData\Local\Microsoft\WindowsApps;
+433 [8656] INFO perfrun.launcher <> - set environment variable: INTEL_LIBITTNOTIFY32 = C:\Program Files (x86)\Intel\oneAPI\advisor\2021.3.0\bin32\runtime\ittnotify_collector.dll
+433 [8656] INFO perfrun.launcher <> - set environment variable: INTEL_LIBITTNOTIFY64 = C:\Program Files (x86)\Intel\oneAPI\advisor\2021.3.0\bin64\runtime\ittnotify_collector.dll
+433 [8656] INFO perfrun.launcher <> - set environment variable: INTEL_ITTNOTIFY_GROUPS = 
+433 [8656] INFO perfrun.launcher <> - set environment variable: INTEL_JIT_PROFILER32 = C:\Program Files (x86)\Intel\oneAPI\advisor\2021.3.0\bin32\runtime\ittnotify_collector.dll
+433 [8656] INFO perfrun.launcher <> - set environment variable: INTEL_JIT_PROFILER64 = C:\Program Files (x86)\Intel\oneAPI\advisor\2021.3.0\bin64\runtime\ittnotify_collector.dll
+434 [8656] INFO perfrun.launcher <> - set environment variable: VS_PROFILER = ittnotify_collector.dll
+434 [8656] INFO perfrun.launcher <> - set environment variable: OMP_TOOL_LIBRARIES = C:\Program Files (x86)\Intel\oneAPI\advisor\2021.3.0\bin32\runtime\ittnotify_collector.dll;C:\Program Files (x86)\Intel\oneAPI\advisor\2021.3.0\bin64\runtime\ittnotify_collector.dll
+434 [8656] INFO perfrun.launcher <> - set environment variable: ENABLE_JITPROFILING = 1
+434 [8656] INFO perfrun.launcher <> - set environment variable: CL_CONFIG_USE_VTUNE = True
+434 [8656] INFO perfrun.launcher <> - set environment variable: KMP_FORKJOIN_FRAMES = 0
+434 [8656] INFO perfrun.launcher <> - set environment variable: KMP_FORKJOIN_FRAMES_MODE = 0
+434 [8656] INFO perfrun.launcher <> - set environment variable: OMP_TOOL = disabled
+435 [8656] INFO perfrun.launcher <> - set environment variable: INTEL_MRTE_DATA_DIR = C:\Users\xbobol00\Downloads\ITU-Lab-Starter\WPFWeather.App\My Advisor Results - WPFWeather.App\e000\hs000\data.0
+435 [8656] INFO perfrun.launcher <> - set environment variable: INTEL_MRTE_HOST_NAME = PCN204-02.fit.vutbr.cz
+435 [8656] INFO perfrun.launcher <> - set environment variable: JAVA_TOOL_OPTIONS = -agentlib:advixe_tpssmrte_javaprof_1.0
+435 [8656] INFO perfrun.launcher <> - set environment variable: COR_ENABLE_PROFILING = 1
+435 [8656] INFO perfrun.launcher <> - set environment variable: COR_PROFILER = {10337B79-F6CD-4df9-8D18-26A67272096B}
+435 [8656] INFO perfrun.launcher <> - set environment variable: COMPLUS_ProfAPI_ProfilerCompatibilitySetting = EnableV2Profiler
+435 [8656] INFO perfrun.launcher <> - set environment variable: CORECLR_ENABLE_PROFILING = 1
+436 [8656] INFO perfrun.launcher <> - set environment variable: CORECLR_PROFILER = {10337B79-F6CD-4df9-8D18-26A67272096B}
+436 [8656] INFO perfrun.launcher <> - set environment variable: CORECLR_PROFILER_PATH = C:\Program Files (x86)\Intel\oneAPI\advisor\2021.3.0\bin64/advixe_tpssmrte_clrprof_1.0.dll
+436 [8656] INFO perfrun.launcher <> - set environment variable: INTEL_MRTE_PROFILER_MODE = mixed
+438 [8656] INFO perfrun.launcher <> - RpcServer: run RPC server to handle requests
+10548 [8656] INFO perfrun.sdk <> - IProcessUtil: the given executable 'C:\Users\xbobol00\Downloads\ITU-Lab-Starter\WPFWeather.App\bin\Debug\net5.0-windows\WPFWeather.App.dll' is valid.
+10548 [8656] INFO perfrun.launcher <> - Launcher: command line to start before modification = C:\Users\xbobol00\Downloads\ITU-Lab-Starter\WPFWeather.App\bin\Debug\net5.0-windows\WPFWeather.App.dll
+10552 [8656] INFO perfrun.launcher <> - Launcher: command line to start after modification = C:\Program Files (x86)\Intel\oneAPI\advisor\2021.3.0\bin64\pin.exe -error_file C:\Users\xbobol00\Downloads\ITU-Lab-Starter\WPFWeather.App\My Advisor Results - WPFWeather.App\e000\hs000\data.0\pinerr.tpsslog -detach_reattach -probe -follow_execv -p32 C:\Program Files (x86)\Intel\oneAPI\advisor\2021.3.0\bin32\pin.exe -p64 C:\Program Files (x86)\Intel\oneAPI\advisor\2021.3.0\bin64\pin.exe -t64 C:\Program Files (x86)\Intel\oneAPI\advisor\2021.3.0\bin64\tpsstool.dll -t C:\Program Files (x86)\Intel\oneAPI\advisor\2021.3.0\bin32\tpsstool.dll -server_name tpss_ipc.9768 -prd_dir C:\Program Files (x86)\Intel\oneAPI\advisor\2021.3.0 -- C:\Users\xbobol00\Downloads\ITU-Lab-Starter\WPFWeather.App\bin\Debug\net5.0-windows\WPFWeather.App.dll
+10553 [8656] INFO perfrun.launcher <> - ProcessCreator object was created
+10596 [8656] INFO perfrun.launcher <> - Launcher: the process was started in suspend mode
+10597 [11224] INFO perfrun.itt <> - start itt controller for pid #3664
+10598 [11224] INFO perfrun.tpss <> - start tpss controller for pid #3664
+10663 [8656] INFO perfrun.launcher <> - Launcher: all plugins were started
+10663 [8656] INFO perfrun.launcher <> - DirectoryMonitor object was created
+10663 [8656] INFO perfrun.launcher <> - DirectoryMonitor: a callback was added
+10663 [8656] INFO perfrun.launcher <> - DirectoryMonitor was started with pingTime = 1000
+10663 [8656] INFO perfrun.launcher <> - DeadlineTimer is going to be constructed
+10664 [8656] INFO perfrun.launcher <> - DeadlineTimer: a callback was added
+10671 [8656] INFO perfrun.launcher <> - Launcher: resume the profiled application and  wait its termination or stop command
+17279 [8656] WARN perfrun.sdk <> - Unexpected exit status - -1073740791, at file: vcs\perfrun1\sdk\src\utils_win.cpp:559
+17279 [8656] INFO perfrun.launcher <> - Launcher: the profiled application was terminated  with exit code = -1073740791
+17289 [11224] INFO perfrun.launcher <> - Cannot open the given process to PING #10736 : The parameter is incorrect.
+17311 [11224] INFO perfrun.itt <> - stop itt controller
+17311 [11224] INFO perfrun.itt <> - detach itt controller
+17311 [11224] INFO perfrun.tpss <> - stop tpss controller
+17313 [11224] INFO perfrun.sdk <> - De-allocating TMU: C:\Users\xbobol00\Downloads\ITU-Lab-Starter\WPFWeather.App\My Advisor Results - WPFWeather.App\e000\hs000\data.0\systemcollector-9768-PCN204-02.fit.vutbr.cz.sc
+17331 [11224] INFO perfrun.system <> - closed the system trace file: C:\Users\xbobol00\Downloads\ITU-Lab-Starter\WPFWeather.App\My Advisor Results - WPFWeather.App\e000\hs000\data.0\systemcollector-9768-PCN204-02.fit.vutbr.cz.sc
+17331 [8656] INFO perfrun.launcher <> - Launcher: all plugins were stopped.
+17331 [8656] INFO perfrun.launcher <> - DeadlineTimer is going to be destroyed
+17331 [8656] INFO perfrun.launcher <> - DeadlineTimer was destroyed
+17331 [8656] INFO perfrun.launcher <> - DirectoryMonitor object was destroyed
+17332 [8656] WARN perfrun.launcher <> - Stop command is ignored because it is received when collection is already stopped, at file: vcs\perfrun1\launcher\src\command_handler.cpp:212
+17333 [8656] INFO perfrun.launcher <> - Application exit code: -1073740791
+17333 [8656] INFO perfrun.launcher <> - Exit code: -1073740791

@@ -1,0 +1,57 @@
+
+Popis:
+Viz také https://www.fit.vutbr.cz/~rysavy/ipk2020/IPK2020-Projekt1.pdf
+Triviální distribuovaný souborový systém
+
+Cílem projektu je implementovat klienta pro triviální (read-only) distribuovaný souborový systém. Tento systém používá zjednodušenou verzi URL pro identifikaci souborů a jejich umístění. Systém pro přístup k souborům používá File Service Protocol (FSP). V projektu bude stačit implementovat pouze jeden typ požadavku, kterým je příkaz GET. Systém používá symbolických jmen, které jsou překládány na IP adresy pomocí protokolu Name Service Protocol (NSP). Tento protokol umožňuje získat IP adresu a číslo portu, kde daný souborový server běží.
+
+Specifikace protokolů a detailní popis požadavků na implementaci naleznete na uvedeném URL. 
+
+Klient bude nazván fileget, popřípadě fileget.py.
+
+Implementace
+
+Projekt může být implementován v jazyce C/C++ nebo Python. Projekt musí být přeložitelný/spustitelný na CentOS Linux od verze 7. Ten najdete na merlin.fit.vutbr.cz, kam máte všichni přístup, viz: Linux na FIT.
+
+Jestliže máte Windows 10, je možné také použít WSL (instalace CentOS je trochu komplikovaná, ale pro vývoj můžete použít například Ubuntu a pak otestovat na CentOS):
+
+Install Windows Subsystem for Linux (WSL) on Windows 10 | Microsoft Docs
+
+Testování a ladění
+
+V průběhu vývoje můžete použít testovací server, který je k dispozici ke stažení pro různé OS:
+
+https://www.fit.vutbr.cz/~rysavy/ipk2020/fsptest.zip
+
+Server je vytvořen v .NET 5. Spustitelné soubory jsou velké (~50MB), protože obsahují kompletní prostředí pro běh, ale není nutné instalovat .NET. V případě MacOS systém odmítá aplikaci spustit, protože není podepsaná - je možné manuálně přidat vyjímku. 
+
+Self-Test
+
+Implementovaného klienta je nutné před odevzdáním otestovat. Postup:
+
+Nahrajte svůj projekt na stroj merlin.fit.vutbr.cz. Přeložte je-li potřeba. 
+Vytvořte prázdnou složku, ve které budete spouštět klienta tak, aby na konci testu obsahovala pouze vytvořené soubory. Ideálně jako podadresář ve složce se spustitelným souborem klienta.
+Postupně vyzkoušejte klienta s těmito parametry:
+
+../fileget -n 147.229.176.19:3333 -f fsp://blue.server/000093.text 
+../fileget -n 147.229.176.19:3333 -f fsp://blue.server/000020.pdf 
+../fileget -n 147.229.176.19:3333 -f fsp://blue.server/000052.xls 
+../fileget -n 147.229.176.19:3333 -f fsp://red.server/index
+../fileget -n 147.229.176.19:3333 -f fsp://green.server/*
+
+
+Složku zabalte pomocí zip a odevzdejte dle pokynů.
+
+Odevzdání
+
+Projet je nutné odevzdat v uvedeném termínu. Pozdě odevzdané projekty nebo odevzdání jiným způsobem (zaslání na email, atd.) není možné. 
+
+Odevzdejte dva soubory:
+
+Zip archiv se zdrojovými soubory:
+
+xlogin00-src.zip
+
+Zip archiv složky se soubory, vytvořenými v rámci self-testu:
+
+xlogin00-out.zip

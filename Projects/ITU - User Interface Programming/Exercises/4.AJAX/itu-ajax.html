@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+<head>
+  <title> ITU ajax </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+  <style type="text/css">
+  div, input { margin: 10px; }
+  </style>
+</head>
+<body>
+
+<div id="chatArea" style="height: 300px; border: solid #aaa 1px; overflow:auto;"></div> 
+
+<form onsubmit="return uploadData()">
+  <input type="text" id="newMessageString">
+  <input type="submit" value="send">
+</form>
+
+<div id="status" style="border: solid #aaa 1px; ">&nbsp;</div> 
+
+
+<script type="text/javascript">
+
+/***
+  * XMLHttpRequest object constructor (for compatibility with various browsers)
+  */
+
+function createXmlHttpRequestObject() 
+{
+    var request;
+  
+    try
+    {
+        request = new XMLHttpRequest(); // should work on all browsers except IE6 or older
+    } 
+    catch (e) 
+    { 
+        try 
+        {
+            request = new ActiveXObject("Microsoft.XMLHttp"); // browser is IE6 or older
+        }
+        catch (e) 
+        {
+            // ignore error
+        }
+    }
+  
+    if (!request) 
+    {
+        alert("Error creating the XMLHttpRequest object.");
+    } 
+    else 
+    {
+        return request;
+    }
+}
+
+function uploadData()
+{
+    document.getElementById("status").innerHTML = "uploadData()";
+
+    try 
+    {
+        var request = createXmlHttpRequestObject(); // stores XMLHttpRequestObject
+
+        //// put your code here
+        request.open("POST", "http://pckiss.fit.vutbr.cz/itu/api.php", true);
+        request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;");
+        request.send("user=xlogin00&data=" + document.getElementById("newMessageString").value);
+        document.getElementById("newMessageString").value = "";                                          
+    } 
+    
+    catch (e) 
+    {
+        alert(e.toString());
+    }
+
+    return false; // to avoid default form submit behavior 
+}
+var zpravaid = null;
+function downloadData() 
+{
+       document.getElementById("status").innerHTML = "downloadData()"; 
+        
+       var request = createXmlHttpRequestObject();
+       request.open("GET", "http://pckiss.fit.vutbr.cz/itu/api.php", true);
+       request.onreadystatechange = function() // anonymous function (a function without a name).
+       {
+           if ((request.readyState == 4) && (request.status == 200)) // process is completed and http status is OK
+           {
+               document.getElementById("status").innerHTML = "Nova zprava: ";
+               var pole = JSON.parse(request.responseText);
+               
+               for (var i in pole) {
+                  if (pole[i].id <= zpravaid) {
+                      continue;   
+                  }
+                  else {
+                  document.getElementById("chatArea").innerHTML += pole[i].login + ": ";
+                  document.getElementById("chatArea").innerHTML += pole[i].cnt + "<br><br>";
+                  zpravaid = pole[i].id;                      
+                  
+                  document.getElementById("status").innerHTML += zpravaid + " ";
+                  }
+               }  
+               
+           }
+       }
+       request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;");
+       request.send();
+
+}
+
+//// put your code here
+downloadData();
+setInterval(downloadData, 3000);
+
+</script>
+
+</html>

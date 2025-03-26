@@ -1,0 +1,14 @@
+Projekt č. 5
+Vytvořte v LaTeXu smysluplnou prezentaci v rozsahu 6 až 12 slajdů na téma datové struktury. 
+Vyberte si jednu datovou strukturu (např. pole, zásobník, vázaný seznam, binární strom, hashovací tabulka atd.) 
+a tu v prezentaci vysvětlete včetně základních operací nad vybranou strukturou. 
+
+V prezentaci se očekává úvodní a motivační slajd, definice struktury a operací včetně jejich složitosti a ukázky pseudokódu. 
+Dále se očekávají vhodně zvolené ilustrační obrázky, využití odrážek, overlay a číslování slajdů. 
+Hodnotit se bude rovněž informační přínos jednotlivých slajdů. 
+
+Styl prezentace není předepsán, ale značně doporučuji použít třídu beamer a rovněž doporučuji se vyhnout třídě prosper. 
+Překlad proběhne pomocí Vašeho makefilu na stroji Merlin. Nepřeložitelné projekty budou hodnoceny 0 body. 
+Maximální velikost odevzdaného souboru je 1 MB. 
+
+Projekt zadává, konzultuje a hodnotí Milan Češka a Roman Andriushchenko

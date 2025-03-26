@@ -1,0 +1,231 @@
+#!/usr/bin/env bash
+
+POSIXLY_CORRECT=yes
+DIR=0
+I_ARG=0
+N_ARG=0
+FILE_ERE=""
+DIRECTORY_COUNTER=0
+FILES_COUNTER=0
+file_size=0
+width=79
+MAX_FILE_SIZE=1
+IFS=' '
+
+declare -A SIZE
+SIZE['<100B']=0
+SIZE['<1KiB']=0
+SIZE['<10KiB']=0
+SIZE['<100KiB']=0
+SIZE['<1MiB']=0
+SIZE['<10MiB']=0
+SIZE['<100MiB']=0
+SIZE['<1GiB']=0
+SIZE['>=1GiB']=0
+
+while getopts i:n o
+do
+	case "$o" in
+	i)
+        I_ARG=1
+		FILE_ERE="$OPTARG";;
+	n)
+		N_ARG=1;;
+	*)
+        echo "Invalid argument!" >&2 
+		exit 1;;
+	esac
+done
+
+(( OPTIND-- ))
+shift $OPTIND
+if [ $# -gt 1 ]; then
+    echo "Too much arguments!" >&2
+    exit 1
+fi
+
+if [ $# -eq 1 ]; then
+    if [ ! -d "$1" ]; then
+        echo "DIR does not exist" >&2 
+        exit 1
+    else
+        DIR="$1"
+    fi
+else
+    DIR=$(pwd)
+fi
+
+if test $I_ARG -eq 1; then
+    if echo "$DIR" | grep -qE "$FILE_ERE"; then
+        echo "FILE_ERE cannot be a root directory!" >&2
+        exit 1
+    fi
+fi
+
+if [ $N_ARG -eq 1 ]; then
+    if [ -t 1 ]; then
+	    width=$(tput cols) 
+    fi
+fi
+
+while read file
+do  
+    if [ -r "$file" ]; then
+        if [[ "$I_ARG" = "1" ]]; then
+            if printf "$file" | grep -qE "$FILE_ERE"; then
+                continue
+            fi
+        fi
+
+        if [ -d "$file" ]; then
+            (( DIRECTORY_COUNTER++ ))
+
+        elif [ -f "$file" ]; then
+                (( FILES_COUNTER++ ))
+
+            file_size=$(wc -c < "$file" | xargs)
+            if [ "$file_size" -lt 100 ]; then
+                (( SIZE["<100B"]++ ))
+            elif [ "$file_size" -lt 1024 ]; then
+                (( SIZE["<1KiB"]++ ))
+            elif [ "$file_size" -lt 10240 ]; then
+                (( SIZE["<10KiB"]++ ))
+            elif [ "$file_size" -lt 102400 ]; then
+                (( SIZE["<100KiB"]++ ))
+            elif [ "$file_size" -lt 1048576 ]; then
+                (( SIZE["<1MiB"]++ ))
+            elif [ "$file_size" -lt 10485760 ]; then
+                (( SIZE["<10MiB"]++ ))
+            elif [ "$file_size" -lt 10485760 ]; then
+                (( SIZE["<100MiB"]++ ))
+            elif [ "$file_size" -lt 1073741824 ]; then
+                (( SIZE["<1GiB"]++ ))
+            elif [ "$file_size" -ge 1073741824 ]; then
+                (( SIZE[">=1GiB"]++ ))
+            fi
+        fi
+    else #Check permission without ignored files
+        if [[ "$I_ARG" = "1" ]]; then
+            if printf "$file" | grep -qE "$FILE_ERE"; then
+                continue
+            else
+                echo "Permission is missing!" >&2 
+                exit 1
+            fi
+        else
+            echo "Permission is missing!" >&2 
+            exit 1
+        fi
+    fi
+done <<< $(find "$DIR" -type f -or -type d 2> /dev/null)
+
+for i in "${SIZE[@]}"; do
+    if [[ $i -gt MAX_FILE_SIZE ]]; then
+        MAX_FILE_SIZE=$i
+    fi
+done
+
+width=$((width - 13))
+echo "Root directory: $DIR"
+echo "Directories: $DIRECTORY_COUNTER"
+echo "All files: $FILES_COUNTER"
+echo "File size histogram:"
+#############################
+if [[ "$N_ARG" = "1" ]]; then
+    helper=$((SIZE['<100B'] * width))
+    SIZE['<100B']=$((helper / MAX_FILE_SIZE))
+fi
+printf "  <100 B  : "
+while [ ${SIZE['<100B']} -ne 0 ]; do
+	printf "#"
+	(( SIZE['<100B']-- ))
+done
+printf "\n"
+#############################
+if [[ "$N_ARG" = "1" ]]; then
+    helper=$((SIZE['<1KiB'] * width))
+    SIZE['<1KiB']=$((helper / MAX_FILE_SIZE))
+fi
+printf "  <1 KiB  : "
+while [ ${SIZE['<1KiB']} -ne 0 ]; do
+	printf "#"
+	(( SIZE['<1KiB']-- ))
+done
+printf "\n"
+#############################
+if [[ "$N_ARG" = "1" ]]; then
+    helper=$((SIZE['<10KiB'] * width))
+    SIZE['<10KiB']=$((helper / MAX_FILE_SIZE))
+fi
+printf "  <10 KiB : "
+while [ ${SIZE['<10KiB']} -ne 0 ]; do
+	printf "#"
+	(( SIZE['<10KiB']-- ))
+done
+printf "\n"
+#############################
+if [[ "$N_ARG" = "1" ]]; then
+    helper=$((SIZE['<100KiB'] * width))
+    SIZE['<100KiB']=$((helper / MAX_FILE_SIZE))
+fi
+printf "  <100 KiB: "
+while [ ${SIZE['<100KiB']} -ne 0 ]; do
+	printf "#"
+	(( SIZE['<100KiB']-- ))
+done
+printf "\n"
+#############################
+if [[ "$N_ARG" = "1" ]]; then
+    helper=$((SIZE['<1MiB'] * width))
+    SIZE['<1MiB']=$((helper / MAX_FILE_SIZE))
+fi
+printf "  <1 MiB  : "
+while [ ${SIZE['<1MiB']} -ne 0 ]; do
+	printf "#"
+	(( SIZE['<1MiB']-- ))
+done
+printf "\n"
+#############################
+if [[ "$N_ARG" = "1" ]]; then
+    helper=$((SIZE['<10MiB'] * width))
+    SIZE['<10MiB']=$((helper / MAX_FILE_SIZE))
+fi
+printf "  <10 MiB : "
+while [ ${SIZE['<10MiB']} -ne 0 ]; do
+	printf "#"
+	(( SIZE['<10MiB']-- ))
+done
+printf "\n"
+#############################
+if [[ "$N_ARG" = "1" ]]; then
+    helper=$((SIZE['<100MiB'] * width))
+    SIZE['<100MiB']=$((helper / MAX_FILE_SIZE))
+fi
+printf "  <100 MiB: "
+while [ ${SIZE['<100MiB']} -ne 0 ]; do
+	printf "#"
+	(( SIZE['<100MiB']-- ))
+done
+printf "\n"
+#############################
+if [[ "$N_ARG" = "1" ]]; then
+    helper=$((SIZE['<1GiB'] * width))
+    SIZE['<1GiB']=$((helper / MAX_FILE_SIZE))
+fi
+printf "  <1 GiB  : "
+while [ ${SIZE['<1GiB']} -ne 0 ]; do
+	printf "#"
+	(( SIZE['<1GiB']-- ))
+done
+printf "\n"
+#############################
+if [[ "$N_ARG" = "1" ]]; then
+    helper=$((SIZE['>=1GiB'] * width))
+    SIZE['>=1GiB']=$((helper / MAX_FILE_SIZE))
+fi
+printf "  >=1 GiB : "
+while [ ${SIZE['>=1GiB']} -ne 0 ]; do
+	printf "#"
+	(( SIZE['>=1GiB']-- ))
+done
+printf "\n"

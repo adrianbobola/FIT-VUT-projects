@@ -1,0 +1,31 @@
+.TH Generovani NetFlow
+.SH NAME
+FIT VUT - ISA Projekt 2022 - Generovani NetFlow dat ze zachycene sitove komunikace 
+.SH SYNOPSIS
+.B flow
+[\fIoptions\fR]
+.SH DESCRIPTION
+.B flow
+je NetFlow exporter, ktory zo zachytenych sietovych dat vo formate pcap vytvori zaznamy NetFlow, ktore odosle na kolektor.
+.SH OPTIONS
+.TP
+.BR \-f " <file>
+Meno analyzovaneho suboru v aktualnom adresari.
+Bez zadaneho parametra prijma subor na STDIN.
+.TP
+.BR \-c " <netflow_collector:port>
+IP adresa alebo hostname NetFlow kolektoru. Volitelne aj UDP port.
+Bez zadaneho parametra je tato hodnota: 127.0.0.1:2055.
+.TP
+.BR \-a " <seconds-active_timer>
+Interval v sekundach po ktorom sa exportuju aktivne zaznamy na kolektor. Jedna sa o cele nezaporne cislo.
+Bez zadaneho parametra je tato hodnota: 60
+.TP
+.BR \-i " <seconds-inactive_timer>
+Interval v sekundach po ktorom sa exportuju neaktivne zaznamy na kolektor. Jedna sa o cele nezaporne cislo.
+Bez zadaneho parametra je tato hodnota: 10
+.TP
+.BR \-m " <count>
+Velkost flow cache. Jedna sa o cele cislo vacsie ako 0. Pri dosiahnuti max. velkosti dojde k exportu najstarsieho zaznamu v cashi na kolektor.
+Bez zadaneho parametra je tato hodnota: 1024
+

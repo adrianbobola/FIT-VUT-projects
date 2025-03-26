@@ -1,0 +1,21 @@
+<!--
+ * @author Adrian Bobola (xbobol00)
+ * @file Simple upload server for users presentations
+//-->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<h1>Upload server</h1><br>
+<h4>MAX velkost suboru: 100 MB!</h4>
+
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    Vyberte subor:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="OK" name="submit">
+</form>
+
+</body>
+</html>

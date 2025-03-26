@@ -1,0 +1,69 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[left=2.0cm, top=3.0cm, text={17cm, 24cm}]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[IL2]{fontenc}
+\usepackage[czech]{babel}
+\usepackage{url}
+
+\begin{document}
+\begin{titlepage}
+\begin{center}
+\Huge\textsc{Vysoké učení technické v~Brně}\\
+\huge\textsc{Fakulta informačních technologií}\\
+\vspace{\stretch{0.382}}
+\LARGE{Typografie a~publikování -- 4. projekt}\\
+\Huge{Bibliografické citácie}
+\vspace{\stretch{0.600}}
+\end{center}
+{\Large{\today\hfill
+Adrián Bobola}}
+\vspace{\stretch{0.025}}
+\end{titlepage}
+
+\section*{Úvod do typografie}
+    Písmo je základným dorozumievacím prostriedkom ľudstva už od nepamäti. Maľby v~jaskyniach
+    nasvedčujú tomu, že už aj naši dávni predkovia používali písmo na
+    komunikáciu.\cite{Printmag}
+    \cite{typografia_1976}.
+    
+    Samotný termín \verb|typografia| označuje grafickú úpravu tlačených dokumentov.
+    Zaoberá sa použitím vhodného rezu, typu písma a prevedením textu do vhodnej estetickej
+    podoby~\cite{Fiala}.
+    
+\section*{Nástroj \LaTeX}    
+  \LaTeX\ je softvérový balíček, ktorý nám umožňuje formátovanie textu pomocou makier a tým zjednodušuje používanie systému pre sadzbu dokumentov tzv. TeX. Bližšie informácie o~tomto systéme viď~\cite{wiki_tex}.
+  
+  Používanie softvéru môže byť pre niektorých užívateľov pomerne náročné. 
+  Úplným začiatočníkom môže pomôcť podrobný sprievodca systémom \LaTeX\
+  viď~\cite{Kopka}. 
+  
+\section{Matematické výrazy}
+Systém \LaTeX\ je vhodný aj pre náročných používateľov, ktorý požadujú
+rôzne symboly gréckej abecedy napr. $\omega, \epsilon, \lambda$, prípadne iné matematické symboly~\cite{Gratzer}. 
+
+\section{Diagramy jazyka MSC}
+Tento systém taktiež umožňuje vkladať rôzne diagramy jazyka MSC do dokumentov. Tejto téme sa venoval aj jeden zo študentov vo svojej bakalárskej práci viď~\cite{Fabry}.
+
+\section{Dostupné balíčky}
+Použitie systému \LaTeX\  nám taktiež uľahčí prácu napríklad pri
+sadzbe štruktúr napríklad algoritmov, grafov a pod.~\cite{Simpson}.
+Pre tento systém existuje celá škála rôznych balíčkov,
+ktoré nám umožnia používať rôzne objekty, ktoré nie sú súčasťou
+samotného systému.
+
+\section{Bakalarské a diplomové práce}
+Mnoho študentov používa tento systém aj na písanie rôznych záverečných prác. Niektorí užívatelia tvrdia, že je systém \LaTeX\ príliš
+náročný na používanie a radšej preferujú iné nástroje~\cite{OpenWetWare}. Tento pocit je však veľmi subjektívny
+a nemožno sa ním úplne riadiť.
+
+\section{Prezentácie}
+Tento nástroj taktiež môžete využiť dokonca aj pri tvorbe rôzných
+prezentácii. O~zásadách správnej prezentácie sa môžete dočítať
+v~\cite{Yaffe}.
+
+\newpage
+\bibliographystyle{czechiso}
+\renewcommand{\refname}{Použitá literatura}
+\bibliography{proj4}
+
+\end{document}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+ <rdmgr>
+  <timestamp type="u64_t">1635330667</timestamp>
+  <hostname>PCN204-02.fit.vutbr.cz</hostname>
+  <os>windows</os>
+  <product>Intel® Advisor 2021.3</product>
+  <buildNumber type="s32_t">609871</buildNumber>
+  <logicalCPUCount type="s32_t">4</logicalCPUCount>
+  <physicalCoreCount type="s32_t">2</physicalCoreCount>
+  <processorPackageCount type="s32_t">1</processorPackageCount>
+  <CPUFrequency type="s64_t">3392000000</CPUFrequency>
+  <CPUFamily type="s32_t">6</CPUFamily>
+  <CPUModel type="s32_t">58</CPUModel>
+  <CPUStepping type="s32_t">9</CPUStepping>
+  <CPUBrandName>        Intel(R) Core(TM) i3-3245 CPU @ 3.40GHz</CPUBrandName>
+  <isa>avx</isa>
+ </rdmgr>
+</root>

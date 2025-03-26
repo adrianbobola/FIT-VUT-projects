@@ -1,0 +1,19 @@
+-r
+C:\Users\xbobol00\Downloads\ITU-Lab-Starter\WPFWeather.App\My Advisor Results - WPFWeather.App\e000\hs000
+--mrte-mode=managed
+--follow-child
+--return-app-exitcode
+--strategy=ld-linux.so.2:notrace:notrace,ld-linux-x86-64.so.2:notrace:notrace
+--interval=10
+--data-limit-mb=500
+--stack-stitching
+--itt-config=frame,task,event,counter,model
+--stackwalk=offline
+--mrte-type=java,dotnet,python
+--type=cpu:stack
+--opencl-trace-mode=default
+--search-dir
+bin=C:\Users\xbobol00\Downloads\ITU-Lab-Starter\WPFWeather.App
+--app-working-dir=C:\Users\xbobol00\Downloads\ITU-Lab-Starter\WPFWeather.App\bin\Debug\net5.0-windows
+--
+C:\Users\xbobol00\Downloads\ITU-Lab-Starter\WPFWeather.App\bin\Debug\net5.0-windows\WPFWeather.App.dll
