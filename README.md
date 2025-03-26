@@ -1,42 +1,46 @@
-# Welcome to my GitHub repository!
-There you can find all my school projects.
+# 🎓 FIT VUT School Projects (2019–2024)
 
+Welcome to my repository containing a collection of school projects developed during my Bachelor's studies at the **Faculty of Information Technology, Brno University of Technology**.
 
-# FIT VUT 2019 - 2024
+This repository includes code and assignments from various courses across all semesters. Projects are written in a range of languages and technologies, including C, C++, Python, Java, JavaScript, React, and more.
 
-## 1. semester
+---
 
-IEL-	Electronics for Information Technology<br>
-IUS-	Introduction to Software Engineering<br>
-IZP-	Introduction to Programming Systems<br>
+## 📚 Courses by Semester
 
-## 2. semester
+### 🧭 1st Semester
+- **IEL** – Electronics for Information Technology  
+- **IUS** – Introduction to Software Engineering  
+- **IZP** – Introduction to Programming Systems  
 
-INC-	Digital Systems Design<br>
-IOS-	Operating Systems<br>
-ISU-	Machine Level Programming<br>
+### 🧭 2nd Semester
+- **INC** – Digital Systems Design  
+- **IOS** – Operating Systems  
+- **ISU** – Machine Level Programming  
 
-## 3. semester
+### 🧭 3rd Semester
+- **IAL** – Algorithms  
+- **IFJ** – Formal Languages and Compilers  
+- **INP** – Design of Computer Systems  
+- **ISS** – Signals and Systems  
 
-IAL-	Algorithms<br>
-IFJ-	Formal Languages and Compilers<br>
-INP-	Design of Computer Systems<br>
-ISS-	Signals and Systems<br>
+### 🧭 4th Semester
+- **IDS** – Database Systems  
+- **IPK** – Computer Communications and Networks  
+- **IPP** – Principles of Programming Languages  
+- **IZG** – Computer Graphics Principles  
+- **IZU** – Fundamentals of Artificial Intelligence  
+- **IJA** – Java Programming Language  
+- **ITY** – Typography and Publishing  
 
-## 4. semester
+### 🧭 5th Semester
+- **IIS** – Information Systems  
+- **IMP** – Microprocessors and Embedded Systems  
+- **IMS** – Modelling and Simulation  
+- **ITU** – User Interface Programming  
+- **ISA** – Network Applications and Network Administration  
 
-IDS-	Database Systems<br>
-IPK-	Computer Communications and Networks<br>
-IPP-	Principles of Programming Languages<br>
-IZG-	Computer Graphics Principles<br>
-IZU-	Fundamentals of Artificial Intelligence<br>
-IJA-	Java Programming Language<br>
-ITY-	Typography and Publishing<br>
+---
 
-## 5. semester
+🛠 This repository serves as an archive of my academic journey and technical growth during the Bachelor's degree.
 
-IIS-	Information Systems<br>
-IMP-	Microprocessors and Embedded Systems<br>
-IMS-	Modelling and Simulation<br>
-ITU-	User Interface Programming<br>
-ISA-    Network Applications and Network Administration<br>
